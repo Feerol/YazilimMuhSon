@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS bağlantısı -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Makaleler</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/icon.jpeg" alt="chatgpt icon" class="icon">
+        </div>
+        <div class="links">
+            <a href="./index.html" class="nav-link">Anasayfa </a>
+            <a href="./makale.html" class="nav-link">Makaleler</a>
+            <a href="./ilginc.html" class="nav-link">İlginç Bilgiler</a>
+            <a href="./yemek.html" class="nav-link">Yemek Tarifleri</a>
+            <a href="./games.html" class="nav-link">Eğlence</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Makaleler</h1>
+        <div class="articles">
+            <div class="article">
+                <h2>Yapay Zeka</h2>
+                <p id="yapay-zeka-makale"></p>
+                <p>Yapay zeka, bir bilgisayarın veya bilgisayar kontrollü robotun, genellikle akıllı varlıklarla ilişkili görevleri yerine getirme yeteneğidir. Yapay zeka, insan benzeri becerileri sergileme yeteneği sağlar ve işlemleri hızlandırmayı, hataları azaltmayı ve verimliliği arttırmayı amaçlar.</p>
+                <a href="#" class="read-more">Devamını Oku</a>
+            </div>
+            <div class="article">
+                <h2>Uzayda Kolonileşme</h2>
+                <p id="uzayda-kolonilesme-makale"></p>
+                <p>Uzayda kolonileşme, insanlığın gelecekteki en olası yollarından biridir. Dünya nüfusu büyüdükçe ve genişledikçe, insanlığın devamının en olası yollarından biri uzayda kolonileşmektir. Bu konuda birçok araştırma yapılmakta ve planlar geliştirilmektedir.</p>
+                <a href="#" class="read-more">Devamını Oku</a>
+            </div>
+        </div>
+    </main>
+
+    <form onsubmit="submitForm(); return false;">
+        <input type="text" id="message" placeholder="Kullanıcı girişi">
+        <button type="submit">Gönder</button>
+    </form>
+
+    <footer class="footer">
+        <div class="icons">
+            <img src="./src/facebook.png" alt="Facebook" class="icon">
+            <img src="./src/twitter.png" alt="Twitter" class="icon">
+            <img src="./src/instagram.png" alt="Instagram" class="icon">
+        </div>
+        <p>&copy; 2023 ChatGPT</p>
+    </footer>
+
+    <script>
+        // Kullanıcının girişini almak için formu gönderir
+        function submitForm() {
+            const message = document.getElementById("message").value;
+
+            fetch("/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ message })
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("yapay-zeka-makale").innerHTML = data;
+            })
+            .catch(error => {
+                console.log("Hata:", error);
+            });
+        }
+    </script>
+</body>
+
+</html>

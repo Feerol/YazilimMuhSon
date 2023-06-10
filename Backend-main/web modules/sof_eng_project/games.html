@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css baglantisi -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>ChatGPT</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/icon.jpeg" alt="chatgpt icon" class="icon" />
+        </div>
+        <div class="links">
+            <a href="./index.html" class="nav-link">Anasayfa </a>
+            <a href="./makale.html" class="nav-link">Makaleler</a>
+            <a href="./ilginc.html" class="nav-link">Ilginc Bilgiler</a>
+            <a href="./yemek.html" class="nav-link">Yemek Tarifleri</a>
+            <a href="./games.html" class="nav-link">Eglence</a>
+        </div>
+    </nav>
+
+    <div class="games">
+        <h1>Oyunlar</h1>
+        <p>Birbirinden farkli turde oyunlar ile karsinizdayiz. Gun gectikce yeni oyunlar ekliyoruz. Istediginiz tarzda icin lutfen yaziniz.</p>
+
+
+        <div class="game-icons">
+            <div class="game-item">
+                <div class="game-icon">
+                    <img src="./src/chess.jpeg" alt="">
+                </div>
+                <h1 class="game-title">Satranc</h1>
+                <button id="chessButton" class="game-play-button">Oyna</button>
+            </div>
+            <div class="game-item">
+                <div class="game-icon">
+                    <img src="./src/snake.jpeg" alt="">
+                </div>
+                <h1 class="game-title">Yilan</h1>
+                <button id="snakeButton" class="game-play-button">Oyna</button>
+            </div>
+            <div class="game-item">
+                <div class="game-icon">
+                    <img src="./src/sudoku.jpeg" alt="">
+                </div>
+                <h1 class="game-title">Sudoku</h1>
+                <button id="sudokuButton" class="game-play-button">Oyna</button>
+            </div>
+            <div class="game-item">
+                <div class="game-icon">
+                    <img src="./src/tetris.jpeg" alt="" class="tetris">
+                </div>
+                <h1 class="game-title">Tetris</h1>
+                <button id="tetrisButton" class="game-play-button">Oyna</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("chessButton").addEventListener("click", function() {
+            window.location.href = "chess.html";
+        });
+
+        document.getElementById("snakeButton").addEventListener("click", function() {
+            window.location.href = "yilan.html";
+        });
+
+        document.getElementById("sudokuButton").addEventListener("click", function() {
+            window.location.href = "sudoku.html";
+        });
+
+        document.getElementById("tetrisButton").addEventListener("click", function() {
+            window.location.href = "tetris.html";
+        });
+    </script>
+
+</body>
+
+</html>

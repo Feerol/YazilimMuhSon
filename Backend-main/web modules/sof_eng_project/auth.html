@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css baglantisi -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>ChatGPT</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/icon.jpeg" alt="chatgpt icon" class="icon" />
+        </div>
+        <div class="links">
+            <a href="./index.html" class="nav-link">Anasayfa </a>
+            <a href="" class="nav-link">Makaleler</a>
+            <a href="" class="nav-link">Ilginc Bilgiler</a>
+            <a href="" class="nav-link">Yemek Tarifleri</a>
+            <a href="" class="nav-link">Eglence</a>
+        </div>
+    </nav>
+
+    <section class="forms">
+        <div class="login-form">
+            <h1>Giris Yap</h1>
+            <p>Hosgeldin! Seni taniyabilmemiz icin lutfen bilgilerini gir</p>
+            <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="email-login">E-mail</label>
+                    <input type="text" id="email-login" name="email" placeholder="xxxxx@xmail.com" />
+                </div>
+                <div class="form-group">
+                    <label for="password-login">Sifre</label>
+                    <input type="password" id="password-login" name="password" placeholder="*******" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Giris yap">
+                </div>
+            </form>
+        </div>
+        
+        <p>Hesabin yok mu? Hemen bize katil</p>
+        <p>Asagidaki formu doldurman yeterli!</p>
+
+        <div class="sign-up-form">
+            <form action="/signup" method="post">
+                <h1>Kaydol</h1>
+                <div class="form-group">
+                    <label for="username-signup">Kullanici Adi</label>
+                    <input type="text" id="username-signup" name="name" placeholder="kufur ve argo kullanmadigina dikkat et">
+                </div>
+                <div class="form-group">
+                    <label for="tel-signup">Telefon Numarasi</label>
+                    <input type="tel" id="tel-signup" name="phone_number" placeholder=" 5xx xxx xx xx">
+                </div>
+                <div class="form-group">
+                    <label for="email-signup">E-Posta</label>
+                    <input type="email" id="email-signup" name="email" placeholder=" xxxxx@xxmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="password-signup">Sifre</label>
+                    <input type="password" id="password-signup" name="password" placeholder="*******">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Kaydol">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <br><br><br>
+    </footer>
+</body>
+
+</html>

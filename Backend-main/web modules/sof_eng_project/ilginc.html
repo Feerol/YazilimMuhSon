@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS bağlantısı -->
+    <link rel="stylesheet" href="styles.css">
+    <title>İlginç Bilgiler</title>
+</head>
+
+<style>
+    .main {
+    padding-top: 6rem;
+    background: url('./src/background.jpeg');
+    background-repeat: no-repeat;
+    height: 79vh;
+    background-size: 100vw;
+}
+
+.main h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.facts {
+    list-style-type: none;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.facts li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.facts li::before {
+    content: "\2022";
+    color: white;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/icon.jpeg" alt="chatgpt icon" class="icon">
+        </div>
+        <div class="links">
+            <a href="./index.html" class="nav-link">Anasayfa </a>
+            <a href="./makale.html" class="nav-link">Makaleler</a>
+            <a href="./ilginc.html" class="nav-link">İlginç Bilgiler</a>
+            <a href="./yemek.html" class="nav-link">Yemek Tarifleri</a>
+            <a href="./games.html" class="nav-link">Eğlence</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>İlginç Bilgiler</h1>
+        <ul class="facts">
+            <li>Dünya’nın çekirdek kısmı 5500 santigrat dereceymiş. Bu sıcaklığın anlamı Güneş’in yüzey sıcaklığı kadar olmasıymış.</li>
+            <li>Bir insan hayatı boyunca ortalama 250.000 kez esnermiş.</li>
+            <li>Dünya’ya her gün 8.600.000 yıldırım düşermiş. Bunun çoğu okyanusların üzerinde olurmuş.</li>
+            <li>İlk canlılık örneklerine 3.5 milyar yıl önce Avusturalya’da rastlanmış.</li>
+            <li>Dünyada her gün yaklaşık 200.000 bebek doğuyormuş.</li>
+            <li>Uzayda bir insan en fazla iki dakika hayatta kalabilirmiş.</li>
+            <li>Bir inek sürüsünde inek öldüğü zaman diğer inekler ölüm yerini araştırır ve tehlike hissederse oradan uzaklaşırlarmış.</li>
+            <li>Sivrisinekler, insanlardan daha fazla insan öldüren tek canlıymış.</li>
+            
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <div class="icons">
+            <img src="./src/facebook.png" alt="Facebook" class="icon">
+            <img src="./src/twitter.png" alt="Twitter" class="icon">
+            <img src="./src/instagram.png" alt="Instagram" class="icon">
+        </div>
+        <p>&copy; 2023 ChatGPT</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+atlas'an bağlanabilmek için önce ip adresini girmeni istiyor.
+atlas sitesinden adımları takip et.
+nodemon src/index.js
+

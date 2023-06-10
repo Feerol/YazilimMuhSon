@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css baglantisi -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>ChatGPT</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./src/icon.jpeg" alt="chatgpt icon" class="icon" />
+        </div>
+        <div class="links">
+            <a href="./index.html" class="nav-link">Anasayfa </a>
+            <a href="./makale.html" class="nav-link">Makaleler</a>
+            <a href="./ilginc.html" class="nav-link">Ilginc Bilgiler</a>
+            <a href="./yemek.html" class="nav-link">Yemek Tarifleri</a>
+            <a href="./games.html" class="nav-link">Eglence</a>
+        </div>
+    </nav>
+
+    <section class="forms">
+        <div class="contact-form">
+            <h1>Bize Ulasin</h1>
+            <p>
+                istek, Oneri ve Sikayetlerinizi lutfen bize ulastirin. en kisa surede
+                donus saglayacagiz.
+            </p>
+            <form action="/submit"  method="post">
+                <div class="form-group">
+                    <label for="name">Isim</label><input placeholder="isminizi yaziniz" type="text"
+                        id="name" name="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><input placeholder="xxxxxx@xxmail.com" type="email"
+                        id="email" name="email"/>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Soyisim</label><input placeholder="Soyisminizi yaziniz" type="text"
+                        id="surname" name="surname" />
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefon Numarasi</label><input placeholder="5xx xxx xx xx" id="tel" type="tel" name="tel"/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj</label><textarea name="message" id="message"  cols="30"
+                        rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Gonder">
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
